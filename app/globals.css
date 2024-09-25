@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Motiva Sans';
+  src: url('/fonts/Motiva-Sans-Regular.woff2') format('woff2'),
+       url('/fonts/Motiva-Sans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Pastikan body memiliki tinggi minimal 100% dari viewport */
+  width: 100%;
+  font-family: Arial, sans-serif; /* Font global */
+}
+
+/* styles/globals.css */
+body {
+
+  background-color: #007bff; /* Biru cerah sebagai fallback */
+  background-image: url('/background.jpg'); /* Gambar background */
+  background-size: cover; /* Buat gambar menutupi seluruh background */
+  background-position: center; /* Posisikan gambar di tengah */
+  background-repeat: no-repeat; /* Hindari pengulangan gambar */
+  height: 100%; /* Buat background menutupi seluruh viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Motiva Sans', Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  position: fixed; /* Buat navbar tetap di posisi atas */
+  top: 0; /* Posisi di atas layar */
+  left: 0;
+  width: 100%; /* Lebar navbar penuh */
+  background-color: #23232c;
+  padding: 25px 400px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navlist{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0px ;
+  margin-right: 200px;
+  padding: 0;
+}
+
+.navItem{
+  margin-right: 20px;
+}
+
+.navItem:last-child{
+  margin-right: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #ededed;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+a:hover{
+  color: #0c3a1e;
+}
+
+.navbar a:active, .navbar a:focus {
+  color: #ffcc00; /* Warna kuning tetap setelah diklik */
+  outline: none; /* Menghilangkan garis outline saat klik */
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  color: #d5c6c6;
+}
+
+
+.HomeContent{
+  
+  text-align: center;
+  
+}
+h1{
+  color: #d5c6c6;
+}
+p{
+  color: #d5c6c6;
+}
+
+.profileImage {
+  width: 400px; /* Atur lebar gambar menjadi lebih kecil */
+  height: 300px; /* Biarkan tinggi gambar menyesuaikan secara proporsional */
+  border-radius:100%; /* Contoh untuk membuat gambar berbentuk lingkaran (opsional) */
+}
+
+.about {
+  padding-top: 0px; /* Sesuaikan nilai ini agar tidak tertutup navbar */
+  color: #d5c6c6;
+  
+}
+
+.about h1 {
+  font-size: 2rem;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project{
+  background-color: #1a1a1a; /* Background gelap */
+  color:#d5c6c6; /* Warna teks putih */
+  padding: 80px 20px; /* Padding untuk menambah jarak dari tepi halaman */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-h1{
+  font-size: 3rem; /* Ukuran besar untuk judul */
+  margin-bottom: 40px; /* Jarak antara judul dan teks lain */
+  text-align: center;
+}
+.project-teks{
+  font-size: 1rem; /* Ukuran teks proyek */
+  margin-bottom: 10px; /* Jarak antar proyek */
+  padding: 10px 20px; /* Padding internal untuk teks proyek */
+  background-color: rgba(255, 255, 255, 0.1); /* Background dengan sedikit transparansi */
+  border-radius: 10px; /* Membuat sudut membulat */
+  width: 100%;
+  max-width: 800px; /* Maksimal lebar agar tidak terlalu melebar */
+  text-align: left; /* Teks rata kiri */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sedikit bayangan */
+}
+.project-teks:hover{
+  background-color: rgba(255, 255, 255, 0.2); /* Efek hover */
+}
+.project video{
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+}
